@@ -1,5 +1,5 @@
 .terraform/
-terraform*
+terraform.tfstate
 .terraform*
 minikube/.terraform*
 kubeadm-ec2/.terraform*
