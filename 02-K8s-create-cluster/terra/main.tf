@@ -44,6 +44,13 @@ module "eks" {
 
       instance_types = ["t2.medium"]
     }
+    production = {
+      min_size     = 1
+      max_size     = 10
+      desired_size = 1
+
+      instance_types = ["t2.medium"]
+    }
   }
 
 cluster_security_group_additional_rules = {
