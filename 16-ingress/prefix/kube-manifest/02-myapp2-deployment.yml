@@ -44,10 +44,11 @@ kind: Ingress
 metadata:
   name: myapp2
   annotations:
-    kubernetes.io/ingress.class: nginx
 spec:
+  ingressClassName: nginx
   rules:
-  - http:
+  - host: "lwplabs.org"
+    http:
       paths:
       - path: /myapp2
         pathType: Prefix
