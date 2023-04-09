@@ -63,5 +63,5 @@ alertmanager:
 #### Install the chart
 
 ```
-helm install prometheus prometheus-community/kube-prometheus-stack -f prometheus-values.yaml
+helm install prometheus prometheus-community/kube-prometheus-stack -f prometheus-values.yml
 ```
