@@ -5,7 +5,7 @@ metadata:
   namespace: default
 subjects:
 - kind: User
-  name: dev
+  name: ashok
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role

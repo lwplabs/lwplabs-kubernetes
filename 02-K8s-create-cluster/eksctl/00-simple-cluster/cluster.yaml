@@ -3,10 +3,10 @@ kind: ClusterConfig
 
 metadata:
   name: eks-cluster
-  region: us-east-1
+  region: us-east-2
   version: "1.22"
 
 managedNodeGroups:
-  - name: eks-node-group
+  - name: ek-node-group
     instanceType: t2.medium
     desiredCapacity: 1

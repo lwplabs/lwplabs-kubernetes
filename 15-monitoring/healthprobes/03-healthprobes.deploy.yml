@@ -15,7 +15,7 @@ spec:
     spec:
       containers: # List
         - name: myapp-container
-          image: lwplapbs/ubuntu-nginx:latest
+          image: lwplapbs/nginx:health
           ports:
             - containerPort: 80
           resources:
@@ -27,7 +27,7 @@ spec:
               memory: 2Gi
           livenessProbe:
             httpGet:
-              path: /tech/status.html
+              path: /tech/index.html
               port : 80
             initialDelaySeconds: 15
             periodSeconds: 5

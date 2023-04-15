@@ -21,10 +21,10 @@ alertmanager:
     receivers:
     - name: 'email-k8s-admin'
       email_configs:
-      - to: kiran@lwplabs.com
+      - to: thedevopsstore@gmail.com
         from: kiran@lwplabs.com
-        smarthost: ####
-        auth_username: ######
-        auth_password: ######
+        smarthost: smtp-relay.sendinblue.com:587
+        auth_username: thedevopsstore@gmail.com
+        auth_password: szwKqHbWRad1JCg6
   service:
     type: NodePort

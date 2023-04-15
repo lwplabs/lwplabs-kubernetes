@@ -4,17 +4,13 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::804263606815:role/eksctl-eks-cluster-nodegroup-eks-NodeInstanceRole-MJ4YW4EZ6QC0
+      rolearn: arn:aws:iam::113768732838:role/eksctl-eks-cluster-nodegroup-eks-NodeInstanceRole-186GWKPW93OVH
       username: system:node:{{EC2PrivateDNSName}}
-    - groups:
-      - integrations
-      rolearn: arn:aws:iam::804263606815:role/ec2_ssm_role
-      username: integrations
 kind: ConfigMap
 metadata:
   name: aws-auth
   namespace: kube-system
 data:
   mapUsers: |
-    - userarn: arn:aws:iam::804263606815:user/dev
-      username: dev
+    - userarn: arn:aws:iam::113768732838:user/ashok
+      username: ashok
