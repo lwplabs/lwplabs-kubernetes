@@ -1,5 +1,5 @@
 global:
-  licenseKey: d569463bb61635d378467f28a733165050afNRAL
+  licenseKey: ecfe50cbde443b2aec9db9f52a8e96473b31NRAL
   cluster: eks-cluster
 
 prometheus:
